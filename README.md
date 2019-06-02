@@ -1,8 +1,7 @@
-# Gym Landing Page
+# Freecodecamp Portfolio
 
 
 
-Logo provided by [Acme Logos](http://acmelogos.com/)
 
 ## Getting Started
 
