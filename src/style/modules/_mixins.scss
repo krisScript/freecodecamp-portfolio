@@ -1,0 +1,8 @@
+@mixin center {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+@mixin easeOut {
+  transition: all 500ms ease-out;
+}
