@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: $primary;
+  color: $light;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 4rem;
+  &__logo {
+    height: 3rem;
+    width: 3rem;
+    @include desktop {
+      height: 4rem;
+      width: 4rem;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__nav-button {
+    height: 3rem;
+    widows: 3rem;
+    z-index: 5;
+    top: 0;
+    padding: 0.8rem;
+    border: none;
+    @include desktop {
+      display: none;
+    }
+    background: transparent;
+    cursor: pointer;
+    @include easeOut;
+    .btn--line {
+      background: $light;
+      width: 2rem;
+      height: 0.2rem;
+      margin: 0 0 5px 0;
+      @include easeOut;
+    }
+
+    &.close {
+      transform: rotate(180deg);
+      .btn--line {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+      }
+    }
+  }
+}

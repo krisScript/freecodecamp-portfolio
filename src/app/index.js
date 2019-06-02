@@ -1,6 +1,5 @@
 'use strict';
 import mobileNav from './mobileNav';
-import switchContent from './switchContent';
 mobileNav();
 const btn1 = {
   id: 'content-btn-1',
@@ -42,4 +41,3 @@ const switchData = {
   content: 'about-content',
   btns: [btn1, btn2, btn3]
 };
-switchContent(switchData, 'fade');
